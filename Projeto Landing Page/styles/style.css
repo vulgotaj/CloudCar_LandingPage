@@ -8,10 +8,63 @@
     text-decoration: none;
 }
 
-
+body {
+    background-image: url('../assets/images/bodybackground-audir8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 html {
     height: 500vh;
+}
+
+/* Padronizações de Sections */
+
+.default-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.white {
+    background-color: #FAFAFA;
+    color: #000;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FAFAFA;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+.section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Afacad Flux', sans-serif;
+    margin-bottom: 40px;
+}
+
+.black .section-desc {
+    color: #CCC;
+}
+
+.white .section-desc {
+    color: #888;
+}
+
+.section-body {
+    max-width: 1140px;
+    margin:auto;
 }
 
 /* Header Area */
@@ -34,7 +87,7 @@ header {
 
 .header-content i {
     font-size: 40px;
-    color: #FFF;
+    color: #FAFAFA;
     display: flex;
     align-items: center;
     
@@ -47,7 +100,7 @@ header {
 
 .header-content a span {
     font-size: 20px;
-    color: #FFF;
+    color: #FAFAFA;
     font-weight: 600;
 }
 
@@ -68,7 +121,7 @@ header.scrolling {
 .header-content ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #FFF;
+    color: #FAFAFA;
     font-weight: 550;
 }
 
@@ -76,7 +129,7 @@ header.scrolling {
     border: none;
     padding: 10px 20px;
     background-color: #C00113;
-    color: #FFF;
+    color: #FAFAFA;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 15px;
@@ -137,7 +190,7 @@ header.scrolling {
 }
 
 .slider-control i { 
-    color: #FFF;
+    color: #FAFAFA;
     font-size: 30px;
 }
 
@@ -171,13 +224,13 @@ header.scrolling {
 
 .slider-content h2 {
     font-family: 'Afacad Flux', sans-serif;
-    color: #FFF;
+    color: #FAFAFA;
     font-size: 60px;
 }
 
 .slider-content h1 {
     font-family: 'Afacad Flux', sans-serif;
-    color: #FFF;
+    color: #FAFAFA;
     font-size: 120px;
     line-height: 100px;
 }
@@ -188,7 +241,7 @@ header.scrolling {
     margin-top: 70px;
     padding: 20px 40px;
     font-size: 20px;
-    color: #FFF;
+    color: #FAFAFA;
     font-style: italic;
     border-radius: 4px;
     position: relative;
@@ -205,4 +258,100 @@ header.scrolling {
 .slider-content em {
     background-color: #c001149c;
     padding: 0px 10px;
+}
+
+/* About us Area */
+
+.aboutus {
+    display: flex;
+}
+
+.aboutus-left {
+    flex: 1;
+}
+
+.aboutus-left p {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Afacad Flux', sans-serif;
+    margin-bottom: 40px;
+}
+
+.aboutus-right {
+    width: 500px;
+    text-align: center;
+}
+
+.aboutus-right img{
+    width: 480px;
+    box-shadow: 3px 5px 10px #333;
+}
+
+.button.btn-aboutus {
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Prices Area */
+
+.prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices-card {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prices-card:last-child {
+    margin-right: 0px;
+}
+
+.card-item-name {
+    font-size: 20px;
+    font-family: 'Afacad Flux', sans-serif;
+    margin-bottom: 10px;
+}
+
+.card-item-price {
+    font-size: 24px;
+    color:#C00113;
+    margin-bottom: 10px;
+}
+
+.card-item-desc {
+    color: #CCC;
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-item-image {
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.price-button {
+    padding: 5px 30px;
+    border: none;
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #C00113;
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.price-button:hover {
+    transform: scale(1.10);
+    opacity: 0.8;
 }
