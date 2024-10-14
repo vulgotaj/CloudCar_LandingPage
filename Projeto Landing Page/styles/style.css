@@ -32,6 +32,10 @@ html {
     color: #000;
 }
 
+.white2 {
+    background-color: #eee;
+}
+
 .black {
     background-color: rgba(0, 0, 0, 0.8);
     color: #FAFAFA;
@@ -299,6 +303,7 @@ header.scrolling {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .prices-card {
@@ -355,3 +360,80 @@ header.scrolling {
     transform: scale(1.10);
     opacity: 0.8;
 }
+
+/* Our Team Area */
+
+.team-card {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFF;
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+.team-card-photo {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.levi {
+    background-image: url(../assets/images/levi.jpg);
+    
+}
+
+.jared {
+    background-image: url(../assets/images/jared.jpg);
+}
+
+.jodi {
+    background-image: url(../assets/images/jodi.jpg);
+}
+
+.susan {
+    background-image: url(../assets/images/susan.jpg);
+}
+
+.team-card-name {
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 24px;
+}
+
+.team-card-role {
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-card-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.team-card-social i {
+    background-color: #000;
+    color: #FFF;
+    padding: 7px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    transition: ease 0.5s;
+}
+
+.team-card-social i:hover {
+    background-color: #C00113;
+    transform: scale(1.10);
+}
+
+/* Our Team Slide Area */
+

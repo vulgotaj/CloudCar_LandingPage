@@ -1,3 +1,5 @@
+// SLIDER BANNER
+
 let totalSlides = document.querySelectorAll('.slider-image').length;
 let currentSlide = 0;
 
@@ -27,3 +29,6 @@ function updateMargin() {
 }
 
 setInterval(next, 5000);
+
+// SLIDER CARD TEAM
+
