@@ -437,3 +437,44 @@ header.scrolling {
 
 /* Our Team Slide Area */
 
+.before-slider {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.team-slider {
+    height:320px;
+    display: flex;
+    transition: ease 0.5s;
+}
+
+.team-slide {
+    min-width: 260px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #FFF;
+    margin-right: 20px;
+}
+
+.team-slider-controls {
+    margin-top: -55px;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-slider-control {
+    width: 50px;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
