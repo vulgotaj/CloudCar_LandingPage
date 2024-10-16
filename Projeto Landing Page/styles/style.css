@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -87,9 +88,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex: 2.4;
 }
 
-.header-content i {
+.container i {
     font-size: 40px;
     color: #FAFAFA;
     display: flex;
@@ -97,12 +99,13 @@ header {
     
 }
 
-.header-content .icon {
+.container .icon {
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
-.header-content a span {
+.container a span {
     font-size: 20px;
     color: #FAFAFA;
     font-weight: 600;
@@ -150,9 +153,34 @@ header.scrolling {
 .container {
     max-width: 1280px;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
+/* Header MOBILE */
 
+.nav-item {
+    padding: 40px 0px 10px 0px;
+    border-bottom: 2px solid #C00113;
+}
+
+.nav-item a {
+    color: #FAFAFA;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#mobile-button,
+#mobile-menu {
+    display: none;
+}
+
+#mobile-nav-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
 
 /* Slide Area */
 
@@ -184,9 +212,9 @@ header.scrolling {
 }
 
 .slider-control {
-    width: 100px;
+    width: 50px;
     height: 50vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     cursor: pointer;
     align-content: center;
@@ -303,14 +331,15 @@ header.scrolling {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .prices-card {
-    flex: 1;
+    width: 250px;;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.9);
-    margin-right: 20px;
+    margin-right: 0px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -444,6 +473,7 @@ header.scrolling {
 }
 
 .team-slider {
+    width: 1120px;
     height:320px;
     display: flex;
     transition: ease 0.5s;
@@ -456,6 +486,7 @@ header.scrolling {
     display: inline-block;
     background-color: #FFF;
     margin-right: 20px;
+    z-index: 11;
 }
 
 .team-slider-controls {
@@ -477,4 +508,307 @@ header.scrolling {
     align-content: center;
     text-align: center;
     color: white;
+}
+
+
+@media (max-width: 1600px) {
+    /* Slide Content Area */
+    .slider-content {
+        max-width: 740px;
+    }
+    
+    .slider-content h2 {
+        font-size: 50px;
+    }
+    
+    .slider-content h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    
+    .seemore-button {
+        margin-top: 70px;
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+
+     /* Slider Control Area */
+
+     .slider-control {
+        width: 30px;
+        height: 20vh;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+    /* Header Area */
+    
+    .container {
+        max-width: 800px;
+    }
+
+    .container i {
+        font-size: 30px;
+    }
+    
+    .container a span {
+        font-size: 15px;
+    }
+
+    .header-content {
+        flex: 3.3;
+    }
+
+    .header-content ul li {
+        margin: 0 10px;
+    }
+    
+    .header-content ul li a {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+
+    /* Slide Content Area */
+    .slider-content {
+        max-width: 740px;
+    }
+    
+    .slider-content h2 {
+        font-size: 50px;
+    }
+    
+    .slider-content h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    
+    .seemore-button {
+        margin-top: 70px;
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+
+     /* Slider Control Area */
+
+     .slider-control {
+        width: 30px;
+        height: 20vh;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+    /* Header Mobile Area */
+    #mobile-button {
+        display: block;
+        z-index: 100;
+    }
+    
+    #mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 5%;
+        padding: 20px;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0,0.9);
+        width: 70vw;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+    
+    #mobile-menu .button {
+        width: 100%;
+        padding: 20px 40px;
+        margin-top: 40px;
+    }
+
+    .header-content {
+        display: none;
+    }
+
+    .container {
+        justify-content: space-around;
+    }
+
+    header.scrolling {
+        padding: 20px 4%;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    /* Slide Content Area */
+    .slider-content {
+        max-width: 450px;
+        align-items: center;
+    }
+    
+    .slider-content h2 {
+        font-size: 30px;
+    }
+    
+    .slider-content h1 {
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+    }
+    
+    .seemore-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    /* Slider Control Area */
+
+    .slider-control {
+        width: 30px;
+        height: 20vh;
+    }
+
+    /* About Us Area */
+
+    .aboutus {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutus-left {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+    
+    .aboutus-left p {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .aboutus-right {
+        margin-top: 40px;
+        text-align: center;
+        width: 450px;
+    }
+    
+    .aboutus-right img{
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 450px) {
+     /* Header Mobile Area */
+    
+     #mobile-button {
+        display: block;
+        z-index: 100;
+    }
+    
+    #mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 5%;
+        padding: 20px;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0,0.9);
+        width: 70vw;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+    
+    #mobile-menu .button {
+        width: 100%;
+        padding: 20px 40px;
+        margin-top: 40px;
+    }
+
+    .header-content {
+        display: none;
+        
+    }
+
+    .container {
+        justify-content: space-around;
+        gap: 0;
+    }  
+    
+    header.scrolling {
+        padding: 20px 4%;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    /* Slide Content Area */
+    .slider-content {
+        max-width: 300px;
+        align-items: center;
+    }
+    
+    .slider-content h2 {
+        font-size: 30px;
+    }
+    
+    .slider-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+    
+    .seemore-button {
+        margin-top: 40px;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    /* Slider Control Area */
+
+    .slider-control {
+        width: 30px;
+        height: 10vh;
+    }
+
+    /* About Us Area */
+
+    .aboutus {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutus-left {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+    
+    .aboutus-left p {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .aboutus-right {
+        margin-top: 40px;
+        text-align: center;
+        width: 320px;
+    }
+    
+    .aboutus-right img{
+        width: 310px;
+    }
+
 }
