@@ -96,7 +96,7 @@ header {
     color: #FAFAFA;
     display: flex;
     align-items: center;
-    
+    transition: ease 0.5s;
 }
 
 .container .icon {
@@ -105,10 +105,19 @@ header {
     flex: 1;
 }
 
+.container .icon:hover > i{
+    color: #C00113;
+}
+
+.container .icon:hover > span{
+    color: #C00113;
+}
+
 .container a span {
     font-size: 20px;
     color: #FAFAFA;
     font-weight: 600;
+    transition: ease 0.5s;
 }
 
 header.scrolling {
@@ -129,7 +138,13 @@ header.scrolling {
     text-decoration: none;
     text-transform: uppercase;
     color: #FAFAFA;
-    font-weight: 550;
+    font-weight: bold;
+    transition: ease 0.3s;
+}
+
+.header-content ul li a:hover {
+    color: #C00113;
+    font-size: 17px;
 }
 
 .button {
@@ -174,10 +189,6 @@ header.scrolling {
 #mobile-button,
 #mobile-menu {
     display: none;
-}
-
-#mobile-menu {
-    transition: ease 0.5s;
 }
 
 #mobile-nav-list {
