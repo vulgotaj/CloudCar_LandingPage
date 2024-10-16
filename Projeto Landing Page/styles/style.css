@@ -176,6 +176,10 @@ header.scrolling {
     display: none;
 }
 
+#mobile-menu {
+    transition: ease 0.5s;
+}
+
 #mobile-nav-list {
     margin-top: 50px;
     display: flex;
@@ -511,6 +515,22 @@ header.scrolling {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1600px) {
     /* Slide Content Area */
     .slider-content {
@@ -540,7 +560,7 @@ header.scrolling {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (min-width: 800px) and (max-width: 1280px) {
     /* Header Area */
     
     .container {
@@ -597,6 +617,24 @@ header.scrolling {
      .slider-control {
         width: 30px;
         height: 20vh;
+    }
+
+    /* Our Team Area */
+
+    /* Our Team Slide Area */
+
+    .before-slider {
+        overflow: auto;
+        max-width: 800px;
+        z-index: 12;
+    }
+
+    .team-slide {
+        min-width: 251px;
+    }
+
+    .team-slider-controls {
+        display: none;
     }
 }
 
@@ -702,7 +740,30 @@ header.scrolling {
     .aboutus-right img{
         width: 400px;
     }
+    /* Our Team Area */
 
+    .team-card-name {
+        font-size: 22px;
+    }
+    
+    .team-card-role {
+        font-size: 18px;
+    }
+
+    /* Our Team Slide Area */
+
+    .before-slider {
+        overflow: auto;
+        max-width: 450px;
+    }
+
+    .team-slide {
+        min-width: 215px;
+    }
+
+    .team-slider-controls {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {
@@ -809,6 +870,21 @@ header.scrolling {
     
     .aboutus-right img{
         width: 310px;
+    }
+
+    /* Our Team Slide Area */
+
+    .before-slider {
+        overflow: auto;
+        max-width: 320px;
+    }
+
+    .team-slide {
+        min-width: 320px;
+    }
+
+    .team-slider-controls {
+        display: none;
     }
 
 }
