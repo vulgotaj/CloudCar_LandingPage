@@ -38,7 +38,7 @@ html {
 }
 
 .black {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #FAFAFA;
 }
 
@@ -545,13 +545,78 @@ header.scrolling {
     cursor: pointer;
 }
 
+/* Services Area */
 
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
 
+#services h1 {
+    color:#C00113;
+    font-size: 52px;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
 
+#services h2 {
+    color:#C00113;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
 
+#services .button {
+    padding: 20px 80px;
+    font-size: 25px;
+}
 
+/* Form Area */
 
+.contact-area {
+    width: 450px;
+    margin: auto;
+}
 
+.contact-area form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-area .contact-split {
+    display: flex;
+    width: 100%;
+}
+
+.contact-split input:first-child {
+    margin-right: 20px;
+}
+
+.contact-area input[type="text"],
+.contact-area textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: 0;
+    margin-top: 20px;
+}
+
+.contact-area textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-area .button {
+    margin-top: 40px;
+}
 
 
 
@@ -669,6 +734,29 @@ header.scrolling {
 
     .team-slider-controls {
         display: none;
+    }
+
+    /* Services Area */
+
+    #services {
+        padding: 100px 20px;
+    }
+    
+    #services h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    #services h2 {
+        color:#C00113;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    #services .button {
+        padding: 20px 40px;
+        font-size: 20px;
     }
 }
 
@@ -804,6 +892,35 @@ header.scrolling {
     #brands .section-body {
         max-width: 450px;
     }
+
+    /* Services Area */
+
+    #services {
+        padding: 100px 20px;
+    }
+    
+    #services h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    #services h2 {
+        color:#C00113;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    #services .button {
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+
+    /* Contact Area */
+
+    .contact-area {
+        width: 400px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -936,5 +1053,34 @@ header.scrolling {
     .brand-item {
         width: 70px;
         height: 70px;
+    }
+
+    /* Services Area */
+
+    #services {
+        padding: 100px 20px;
+    }
+    
+    #services h1 {
+        font-size: 44px;
+        line-height: 44px;
+        text-align: center;
+    }
+    
+    #services h2 {
+        font-size: 26px;
+        line-height: 26px;
+        text-align: center;
+    }
+    
+    #services .button {
+        padding: 20px 40px;
+        font-size: 16px;
+    }
+
+    /* Contact Area */
+
+    .contact-area {
+        width: 300px;
     }
 }
