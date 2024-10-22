@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Car</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" /> <!--Icons-->
+    <link rel="stylesheet" href="styles/style.css" /> <!--CSS Archive-->
+    <link rel="shortcut icon" type="imagex/png" href="assets/icons/cloud_icon.svg"> <!--Domain Icon-->
 </head>
 <body>
     <header id="main-header">
@@ -39,8 +39,8 @@
                 <li class="nav-item"><a href="#contact">Contact Us</a></li>
             </ul>
             <a href="#home"><button class="button">Click Here</button></a>
-        </div>
-    </header>
+        </div><!--Mobile MENU-->
+    </header><!--Header-->
 
     <section class="banner-slide" id="home">
         <div class="slider-controls">
@@ -265,15 +265,15 @@
                 <img class="brand-item" src="assets/images/logo-toyota.png" />
                 <img class="brand-item" src="assets/images/logo-audi.png" />
                 <img class="brand-item" src="assets/images/logo-honda.png" />     
-            </div>
-        </div>
-    </section>
+            </div><!--Brands Area-->
+        </div><!--section_body-->
+    </section><!--Section BRANDS-->
     
     <section class="default-section black" id="services">
         <h1>24H Services</h1>
         <h2>Our team is available to assist you during all the day.</h2>
         <a href="#services"><button class="button">Send us a message</button></a>
-    </section>
+    </section><!--Section Services-->
 
     <section class="default-section white" id="contact">
         <h2 class="section-title">Contact Us</h2>
@@ -289,9 +289,9 @@
                     <textarea name="message" placeholder="MESSAGE"></textarea>
                     <input type="submit" class="button" value="SEND MESSAGE" /> 
                 </form>
-            </div>
-        </div>
-    </section>
+            </div><!--contact-area-->
+        </div><!--section_body-->
+    </section><!--Section Contact-->
 
     <footer class="default-section black" id="footer">
         <div class="footer-main-content">
@@ -300,13 +300,14 @@
                 <div class="redline"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="social-logos">
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-pinterest"></i></a>
-                </div>
-            </div> 
+                <a href="#footer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#footer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#footer"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#footer"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#footer"><i class="fa-brands fa-pinterest"></i></a>
+                </div><!--Social LOGOS-->
+            </div> <!--Footer SOCIAL-->
+            
             <div class="newsletter">
                 <h2 class="footer-title">Newsletter</h2>
                 <div class="redline"></div>
@@ -315,16 +316,40 @@
                 <input type="text" class="news-input" placeholder="Email" />
                 <input type="submit" class="button" value="Send" />
                 </form>
-            </div>
+            </div><!--Footer NEWSLETTER-->
 
             <div class="contact">
                 <h2 class="footer-title">Our location</h2>
                 <div class="redline"></div>
-            </div>
-        </div>
-    </footer>
+                <div class="contact-content">
+                    <div class="contact-adress">
+                        <p>Adress:</p>
+                        <p><span><i class="fa-sharp fa-solid fa-location-dot"></i></span> Rua Francisco Guedes, São Gonçalo - RJ</p>
+                    </div><!--Contact-Adress-->
 
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/sliders.js"></script>
+                    <div class="contact-email">
+                        <p>Email:</p>
+                        <p><span><i class="fa-solid fa-envelope"></i></span> contact@cloudcar.com</p>
+                        <p><span><i class="fa-solid fa-envelope"></i></span> engineer@cloudcar.com</p>
+                        <p><span><i class="fa-solid fa-envelope"></i></span> felipe@cloudcar.com</p>
+                    </div><!--Contact-Email-->
+
+                    <div class="contact-phone">
+                        <p>Phone:</p>
+                        <p><span><i class="fa-solid fa-phone"></i></span> +1 256 391 7110</p>
+                        <p><span><i class="fa-solid fa-phone"></i></span> +1 904 242 1584</p>
+                    </div><!--Contact-Phone-->
+                </div><!--Footer Contact-Content-->
+            </div><!--Footer CONTACT-->
+        </div><!--Footer MAIN CONTENT-->
+        <div class="credits">
+            <div class="credits-creator">
+                <p>Cloud.Car &copy; 2024 - Designed by Felipe Tajima | <a href="https://www.linkedin.com/in/felipe-tajima-600a5826a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>  <a href="https://github.com/vulgotaj" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.instagram.com/tajimafelipe?igsh=bzhmOGhlcnMzaDNp" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+            </div>
+        </div><!--Footer Credits-->
+    </footer><!--FOOTER-->
+
+    <script src="scripts/menu.js"></script> <!--Menu Script-->
+    <script src="scripts/sliders.js"></script> <!--Sliders Scripts-->
 </body>
 </html>

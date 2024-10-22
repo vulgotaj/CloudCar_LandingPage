@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap'); /* Font Afacad Flux */
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@ body {
     background-attachment: fixed;
 }
 
-/* Padronizações de Sections */
+/* ==============Padronizações de Sections ==========================================================*/
 
 .default-section {
     padding-top: 50px;
@@ -68,7 +68,7 @@ body {
     margin:auto;
 }
 
-/* Header Area */
+/* ================Header Area =======================================*/
 
 header {
     width: 100%;
@@ -168,7 +168,7 @@ header.scrolling {
     justify-content: space-around;
 }
 
-/* Header MOBILE */
+/* ==========Header MOBILE ==========================================*/
 
 .nav-item {
     padding: 40px 0px 10px 0px;
@@ -193,7 +193,7 @@ header.scrolling {
     flex-direction: column;
 }
 
-/* Slide Area */
+/* ========Slide Area ==========================================*/
 
 .banner-slide {
     height: 100vh;
@@ -254,7 +254,7 @@ header.scrolling {
     height: 100vh;
 }
 
-/* Slide Content Area */
+/* ============Slide Content Area =====================================*/
 
 .slider-content {
     max-width: 1280px;
@@ -303,7 +303,7 @@ header.scrolling {
     padding: 0px 10px;
 }
 
-/* About us Area */
+/* ===========About us Area =====================================*/
 
 .aboutus {
     display: flex;
@@ -336,7 +336,7 @@ header.scrolling {
     font-size: 18px;
 }
 
-/* Prices Area */
+/* ===========Prices Area ===================================*/
 
 .prices {
     display: flex;
@@ -401,7 +401,7 @@ header.scrolling {
     opacity: 0.8;
 }
 
-/* Our Team Area */
+/* ==========Our Team Area ==========================================*/
 
 .team-card {
     flex: 1;
@@ -475,7 +475,7 @@ header.scrolling {
     transform: scale(1.10);
 }
 
-/* Our Team Slide Area */
+/* ==============Our Team Slide Area ==============================*/
 
 .before-slider {
     max-width: 1100px;
@@ -521,7 +521,7 @@ header.scrolling {
     color: white;
 }
 
-/* Brands Area */
+/* ============Brands Area ================================*/
 
 #brands {
     padding: 20px 0;
@@ -541,7 +541,7 @@ header.scrolling {
     cursor: pointer;
 }
 
-/* Services Area */
+/* ============Services Area =======================================*/
 
 #services {
     display: flex;
@@ -549,6 +549,7 @@ header.scrolling {
     align-items: center;
     justify-content: center;
     padding: 100px 0px;
+    
 }
 
 #services h1 {
@@ -570,7 +571,7 @@ header.scrolling {
     font-size: 25px;
 }
 
-/* Form Area */
+/* =========Form Area ==========================================*/
 
 .contact-area {
     width: 450px;
@@ -603,6 +604,7 @@ header.scrolling {
     border-bottom: 1px solid #999;
     outline: 0;
     margin-top: 20px;
+    font-family: 'Afacad Flux', sans-serif;
 }
 
 .contact-area textarea {
@@ -614,7 +616,12 @@ header.scrolling {
     margin-top: 40px;
 }
 
-/* Footer Area */
+/* ==========Footer Area ===========================================*/
+
+#footer {
+    padding-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.98);
+}
 
 .footer-main-content {
     max-width: 1280px;
@@ -624,8 +631,9 @@ header.scrolling {
 
 .footer-title {
     color:#C00113;
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 10px;
+    font-family: 'Afacad Flux', sans-serif;
 }
 
 .redline {
@@ -699,23 +707,45 @@ footer p {
     align-items: center;
 }
 
+.contact-adress,
+.contact-email,
+.contact-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.contact-content p span{
+    color:#C00113;
+    margin-right: 10px;
+}
 
+.credits {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 14px;
+}
 
+.credits-creator a{
+    margin-right: 7px;
+    color:#C00113
+}
 
+.credits-creator a:last-child {
+    margin-right: 0px;
+}
 
+.credits-creator a:first-child {
+    margin-left: 7px;
+}
 
-
-
-
-
-
-
-
-
+/* ===========Medium Screens==================================================== */
 
 @media (max-width: 1600px) {
-    /* Slide Content Area */
+    /* =======Slide Content Area =================================*/
     .slider-content {
         max-width: 740px;
     }
@@ -735,7 +765,7 @@ footer p {
         font-size: 20px;
     }
 
-     /* Slider Control Area */
+     /*========= Slider Control Area =================================*/
 
      .slider-control {
         width: 30px;
@@ -743,14 +773,16 @@ footer p {
     }
 }
 
+/* ========Small Screens=================================================*/
+
 @media (min-width: 800px) and (max-width: 1280px) {
-    /* Sections */
+    /* =======Sections =========================================*/
 
     .section-body {
         max-width: 800px;
     }
     
-    /* Header Area */
+    /* ===========Header Area ======================================*/
     
     .container {
         max-width: 800px;
@@ -781,7 +813,7 @@ footer p {
         font-size: 12px;
     }
 
-    /* Slide Content Area */
+    /* ==============Slide Content Area =====================================*/
     .slider-content {
         max-width: 740px;
     }
@@ -801,16 +833,14 @@ footer p {
         font-size: 20px;
     }
 
-     /* Slider Control Area */
+     /* =======Slider Control Area ======================================*/
 
      .slider-control {
         width: 30px;
         height: 20vh;
     }
 
-    /* Our Team Area */
-
-    /* Our Team Slide Area */
+    /* ===========Our Team Slide Area ====================================*/
 
     .before-slider {
         overflow: auto;
@@ -826,7 +856,7 @@ footer p {
         display: none;
     }
 
-    /* Services Area */
+    /* ============Services Area ===========================================*/
 
     #services {
         padding: 100px 20px;
@@ -848,10 +878,67 @@ footer p {
         padding: 20px 40px;
         font-size: 20px;
     }
+
+    /* ===========Footer Area =======================================*/
+
+    .footer-main-content {
+        max-width: 810px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .redline {
+        width: 80px;
+    }
+
+    .newsletter .news-input {
+        padding: 5px 10px; 
+        width: 180px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        height: 100%;
+    }
+
+    .contact-content p,
+    .newsletter p,
+    .social p,
+    .social-logos a {
+        font-size: 12px;
+    }
+
+    .contact-content p span{
+        margin-right: 0px;
+        font-size: 10px;
+    }
+
+    .credits {
+        max-width: 800px;
+        font-size: 12px;
+        margin-top: 40px;
+        justify-content: flex-start;
+    }
+    
+    .credits-creator a{
+        margin-right: 7px;
+    }
+        
+    .credits-creator a:first-child {
+        margin-left: 7px;
+    }
+    
+    .credits-creator {
+        flex: 1;
+    }
+
 }
 
+/* ==========Tablets================================================ */
+
 @media (min-width: 450px) and (max-width: 800px) {
-    /* Header Mobile Area */
+    /* =========Header Mobile Area ============================*/
     #mobile-button {
         display: block;
         z-index: 100;
@@ -893,7 +980,7 @@ footer p {
         padding: 30px;
     }
 
-    /* Slide Content Area */
+    /*========== Slide Content Area =========================================*/
     .slider-content {
         max-width: 450px;
         align-items: center;
@@ -915,14 +1002,14 @@ footer p {
         font-size: 20px;
     }
 
-    /* Slider Control Area */
+    /*=============== Slider Control Area ===========================*/
 
     .slider-control {
         width: 30px;
         height: 20vh;
     }
 
-    /* About Us Area */
+    /*======== About Us Area ================================*/
 
     .aboutus {
         flex-direction: column;
@@ -952,7 +1039,7 @@ footer p {
     .aboutus-right img{
         width: 400px;
     }
-    /* Our Team Area */
+    /* ============Our Team Area ===================================*/
 
     .team-card-name {
         font-size: 22px;
@@ -962,7 +1049,7 @@ footer p {
         font-size: 18px;
     }
 
-    /* Our Team Slide Area */
+    /* ===========Our Team Slide Area ==============================*/
 
     .before-slider {
         overflow: auto;
@@ -977,13 +1064,13 @@ footer p {
         display: none;
     }
 
-    /* Brands Area */
+    /* =============Brands Area ==============================*/
 
     #brands .section-body {
         max-width: 450px;
     }
 
-    /* Services Area */
+    /* ===========Services Area =========================*/
 
     #services {
         padding: 100px 20px;
@@ -1006,12 +1093,82 @@ footer p {
         font-size: 20px;
     }
 
-    /* Contact Area */
+    /* =======Contact Area ====================================*/
 
     .contact-area {
         width: 400px;
     }
+
+     /* ======Footer Area============================= */
+
+     .footer-main-content {
+        max-width: 450px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .redline {
+        width: 80px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .newsletter form .button {
+        padding: 10px 20px;
+    }
+
+    .contact-adress,
+    .contact-email,
+    .contact-phone {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-content p,
+    .newsletter p,
+    .social p,
+    .social-logos a {
+        font-size: 12px;
+    }
+
+    .contact-content p span{
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .credits {
+        max-width: 450px;
+        font-size: 12px;
+        margin: auto;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .credits-creator a{
+        margin-right: 7px;
+    }
+        
+    .credits-creator a:first-child {
+        margin-left: 7px;
+    }
+    
+    .credits-creator {
+        flex: 1;
+    }
+
 }
+
+/*===============SMARTPHONES AREA ==================================================*/
 
 @media (max-width: 450px) {
      /* Header Mobile Area */
@@ -1173,4 +1330,72 @@ footer p {
     .contact-area {
         width: 300px;
     }
+
+     /* Footer Area */
+
+     .footer-main-content {
+        max-width: 320px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .redline {
+        width: 80px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .newsletter form .button {
+        padding: 10px 20px;
+    }
+
+    .contact-adress,
+    .contact-email,
+    .contact-phone {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-content p,
+    .newsletter p,
+    .social p,
+    .social-logos a {
+        font-size: 12px;
+    }
+
+    .contact-content p span{
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .credits {
+        max-width: 320px;
+        font-size: 12px;
+        margin: auto;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .credits-creator a{
+        margin-right: 7px;
+    }
+        
+    .credits-creator a:first-child {
+        margin-left: 7px;
+    }
+    
+    .credits-creator {
+        flex: 1;
+    }
+
 }

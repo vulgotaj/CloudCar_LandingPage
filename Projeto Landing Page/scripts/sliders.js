@@ -35,8 +35,6 @@ setInterval(next, 5000);
 let TEAMtotalSlides = 2;
 let TEAMcurrentSlide = 0;
 
-// AQUI
-
 function TEAMback() {
     TEAMcurrentSlide--;
     if(TEAMcurrentSlide < 0) {
@@ -58,5 +56,3 @@ function TEAMupdateMargin() {
     let TEAMnewMargin = (TEAMcurrentSlide * TEAMsliderWidth);
     document.querySelector('.team-slider').style.marginLeft = `-${TEAMnewMargin}px`;
 }
-
-//setInterval(TEAMnext, 5000);
