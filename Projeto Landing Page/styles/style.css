@@ -17,10 +17,6 @@ body {
     background-attachment: fixed;
 }
 
-html {
-    height: 500vh;
-}
-
 /* Padronizações de Sections */
 
 .default-section {
@@ -617,6 +613,100 @@ header.scrolling {
 .contact-area .button {
     margin-top: 40px;
 }
+
+/* Footer Area */
+
+.footer-main-content {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+.footer-title {
+    color:#C00113;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.redline {
+    width: 100px;
+    height: 4px;
+    background-color:#C00113;
+    margin-bottom: 20px;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-logos {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-logos a {
+    color: #FAFAFA;
+    transition: ease 1s;
+    font-size: 18px;
+}
+
+.social-logos a:hover {
+    color:#C00113;
+}
+
+.newsletter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+}
+
+.newsletter .news-input {
+    border: none;
+    padding: 10px 20px; 
+    width: 250px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter form .button {
+    border-radius: 0;
+    padding: 0px 20px;
+}
+
+.newsletter form .button:hover {
+    transform: scale(1);
+}
+
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 
